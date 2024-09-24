@@ -10,4 +10,7 @@ function createGrid(size) {
   // Set container dimensions to 500px x 500px
   gridContainer.style.width = '500px';
   gridContainer.style.height = '500px';
+
+  // Update flex-basis for each square based on grid size
+  const squareSizePercentage = `calc(100% / ${size})`;
 }
