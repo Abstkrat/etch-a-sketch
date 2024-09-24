@@ -29,9 +29,9 @@ function createGrid(size) {
       if (currentOpacity < 1) {
         square.style.opacity = (currentOpacity + 0.1).toFixed(2); // Increases opacity by 10%
 
-        gridContainer.appendChild(square);
       }
-    }
+    });
+        gridContainer.appendChild(square);
   }
 }
 
