@@ -42,3 +42,15 @@ function getRandomColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgba(${r}, ${g}, ${b}, 1)`; // Color with full opacity (1)
 }
+
+//Handle form submission
+gridForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const gridSize = parseInt(gridSizeInput.value); // Get user input value and convert to an integer
+  if (gridSize >= 1)  {
+    createGrid(gridSize); // Create grid with the specified size
+  }
+});
+
+//Initialize the grid with a default size of 10x10
+createGrid(10);
